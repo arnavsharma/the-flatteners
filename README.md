@@ -1,7 +1,7 @@
 # Paper Flattening
 EECS 504 Fall 2020 at University of Michigan Final Project Assignment regarding paper flattening.
 
-[Paper]() | [Presentation]() | [Demo]()
+[Paper]() | [Presentation]() | [Demo]() | [Code](https://github.com/arnavsharma/the-flatteners)
 
 ## Dependencies
 
