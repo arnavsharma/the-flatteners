@@ -36,7 +36,7 @@ def generate_answer_key(img_rgb):
 
     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
 
-    clean_output_img_rgb = img_rgb
+    clean_output_img_rgb = img_rgb.copy()
 
     template_files = glob.glob('./AnswerKey/num_*.png')
     
