@@ -12,10 +12,10 @@ import pandas as pd
 from sklearn.cluster import KMeans
 import argparse
 
-parser = argparse.ArgumentParser()
-# For parsing commandline arguments
-parser.add_argument("--mathWorksheet", type=str, default='./MathWorksheets/0002.png', help='the math worksheet file')
-args = parser.parse_args()
+# parser = argparse.ArgumentParser()
+# # For parsing commandline arguments
+# parser.add_argument("--mathWorksheet", type=str, default='./MathWorksheets/0002.png', help='the math worksheet file')
+# args = parser.parse_args()
 
 # Perform math operation on two values of a math problem
 def fcn_math_operation(math_str, values):
@@ -31,7 +31,7 @@ def fcn_math_operation(math_str, values):
     
     return output
 
-def generate_answer_key(img_rgb):
+def generate_answer_key_main(img_rgb):
     print('Generating Answer Key!!')
 
     img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
@@ -252,7 +252,7 @@ if __name__ == '__main__':
 
     img = cv2.imread(args.mathWorksheet)
 
-    img_rgb, clean_output_img_rgb = generate_answer_key(img)
+    img_rgb, clean_output_img_rgb = generate_answer_key_main(img)
 
     # Write both the full detection image and answer key image
     cv2.imwrite(args.mathWorksheet[:-4] + '_all_detections.png',img_rgb)

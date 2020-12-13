@@ -14,12 +14,12 @@ import matplotlib.pyplot as plt
 import argparse
 
 
-parser = argparse.ArgumentParser()
-# For parsing commandline arguments
-parser.add_argument("--mathWorksheet", type=str, default='./MathWorksheets/0002.png', help='the math worksheet file')
-parser.add_argument("--num_pertubations",type=int,default=2)
-parser.add_argument("--mesh_size",type=int,default=500)
-args = parser.parse_args()
+# parser = argparse.ArgumentParser()
+# # For parsing commandline arguments
+# parser.add_argument("--mathWorksheet", type=str, default='./MathWorksheets/0002.png', help='the math worksheet file')
+# parser.add_argument("--num_pertubations",type=int,default=2)
+# parser.add_argument("--mesh_size",type=int,default=500)
+# args = parser.parse_args()
 
 def generate_mesh(perturbations=2,n_mesh=500):
 

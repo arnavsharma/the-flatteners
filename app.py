@@ -15,13 +15,13 @@ import base64
 import numpy as np
 import cv2
 
-from generate_answer_key import generate_answer_key
+from generate_answer_key import generate_answer_key_main
 
 from generate_perturbations import generate_mesh
 
 app = dash.Dash(__name__, external_stylesheets=['assets/styles.css'])
 app.title='Paper Flattening'
-
+server = app.server
 
 @app.callback([Output('app-content', 'children')],
               Input('upload-data', 'contents'),
@@ -51,7 +51,7 @@ def update_output(image_contents,section, perturbations, show_detections, names,
 
     if section == 'grade':
         # Run Detection Algorithm
-        img_rgb, clean_output_img_rgb = generate_answer_key(img)
+        img_rgb, clean_output_img_rgb = generate_answer_key_main(img)
         print(show_detections)
         if show_detections:
             
@@ -262,4 +262,4 @@ app.layout = layout()
 
 if __name__ == '__main__':
     # Run Applciation
-    app.run_server(debug=False)
+    app.run_server(debug=False,host='0.0.0.0')
