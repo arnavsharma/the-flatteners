@@ -19,11 +19,15 @@ Generating your own dataset is a great way to train an existing model. However, 
 
 To generate your own dataset, run and edit accordingly the following code:
 
+`python generate_perturbations.py`
+
+Our sample dataset is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing).
+
+To see the math worksheet solved, please run the following code:
+
 `python generate_answer_key.py -mathWorksheet pathToWorksheet.png`
 
 where the path to the worksheet is a full path.
-
-Our sample dataset is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing).
 
 ## Deep Learning U-Net Model Reference
 [DocProj Project Page](https://xiaoyu258.github.io/projects/docproj/)
