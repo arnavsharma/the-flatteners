@@ -20,7 +20,7 @@ from generate_answer_key import generate_answer_key_main
 from generate_perturbations import generate_mesh
 
 app = dash.Dash(__name__, external_stylesheets=['assets/styles.css'])
-app.title='Paper Flattening'
+app.title='Document Flattening'
 server = app.server
 
 @app.callback([Output('app-content', 'children')],
