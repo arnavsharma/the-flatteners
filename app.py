@@ -36,7 +36,7 @@ def update_output(image_contents,section, perturbations, show_detections, names,
     
     if image_contents is None:
         # Load in a Default Worksheet if there is no curretn upload
-        img = cv2.imread('./MathWorksheets/0007.png')
+        img = cv2.imread('./MathWorksheets/0001.png')
         
     
         jpg_img = cv2.imencode('.jpg', img)
@@ -105,10 +105,10 @@ def update_output(image_contents,section, perturbations, show_detections, names,
 
         gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)
 
-        ambient = 0.6
+        ambient = 0.55
         diffuse = 0.8
         specular =0.9
-        specular_exp = 25
+        #specular_exp = 25
         lighting_effects = dict(ambient=ambient, diffuse=diffuse, roughness = 0., specular=specular, fresnel=5)
         
         fig = go.Figure(data=[go.Surface(z=z, x=x, y=y,
