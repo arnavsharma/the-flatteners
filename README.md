@@ -10,7 +10,7 @@ EECS 504 Fall 2020 at University of Michigan Final Project Assignment regarding 
 * CUDA and CuDNN
 
 ## Demo
-To run the demo on your location machine, please run the following code in the main directory:
+To run the demo on your location machine instead of as a web app with the link above, please run the following code in the main directory:
 
 `python app.py`
 
