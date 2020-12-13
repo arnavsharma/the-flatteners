@@ -46,21 +46,22 @@ def generate_mesh(perturbations=2,n_mesh=500):
         # Find the vector between all vertex and the selected one
         xv =  mesh_surface -  random_vertex
 
-        mv  = (np.random.rand(3) - 0.5)*50
+        mv  = (np.random.rand(3) - 0.5)*100
+        
 
-        mv[2] = (np.random.rand() - 0.5)*100
-
+        mv[2] = (np.random.rand() - 0.5)*250
+        print(mv)
 
         hmv = np.matlib.repmat(mv,xv.shape[0],1)
 
-        d = np.array(list(map(np.cross,xv,hmv)))
+        d = np.cross(xv,hmv)
 
 
         d = abs(d[:,2]) /np.linalg.norm(mv)
 
         wt = d
 
-        alpha = np.random.rand() * 50 + 50
+        alpha = np.random.rand()* 100+ 100
 
         wt = alpha /(wt + alpha)
 
@@ -126,5 +127,5 @@ if __name__ == '__main__':
                     width=900, height=900,
                     #margin=dict(l=65, r=50, b=65, t=90)
                     )
-fig.show()
+    fig.show()
 
