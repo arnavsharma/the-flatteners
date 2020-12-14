@@ -1,7 +1,8 @@
-# Paper Flattening
-EECS 504 Fall 2020 at University of Michigan Final Project Assignment regarding paper flattening.
+# Modeling
 
-[Paper](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS_504_Project_Paper%20-%20The%20Flatteners.pdf) | [Presentation](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS%20504%20Presentation.pdf) | [Web-App Demo](https://shrouded-temple-50673.herokuapp.com/) | [Code](https://github.com/arnavsharma/the-flatteners)
+## Deep Learning U-Net Model Reference
+[DocProj Project Page](https://xiaoyu258.github.io/projects/docproj/) 
+This work was heavily influenced by the DocProj project. Please checkout their code at the link above.
 
 ## Dependencies
 
@@ -9,39 +10,31 @@ EECS 504 Fall 2020 at University of Michigan Final Project Assignment regarding 
 * Windows (and Linux for Dataset Generation)
 * CUDA and CuDNN
 
-## Set-up
-`pip install -r requirements.txt`
-
-## Demo
-To run the demo on your location machine instead of as a web-app with the link above, please run the following code in the main directory:
-
-`python app.py`
 
 ## Generate Your Own Dataset
-Generating your own dataset is a great way to train an existing model. However, the format of the dataset must match what the model expects.
+Generating your own dataset is a great way to train an existing model. Please follow the instructiosn on the main page for dataset generation.
 
-For the dataset, three different files in three separate folders are required. These are:
+## Generate Data-Set Patches 
+Please run the following pre-processing commands to create local and global patches of your data-set. These patches are necessary inputs for model training. Please change the arguments as necessary for your implementation.
 
-*`./img/` (stores the perturbed paper .png files; [850, 850, 3] pixels)
+`python local_patch.py   
+python global_patch.py `
 
-*`./img_msk/` (stores the binary black-white mask of where the paper is and where the background is; [850, 850, 3] pixels)
+## Training
+Please run the follwong command for training, and change the arguments as necessary for your implementation.
 
-*`./flow/` (stores the 2D flow maps of the perturbations applied to the source images; [2, 850, 850] pixels)
+`python train.py`
 
-To get a quick look of how the perturbations and realistic lighting look, run and edit accordingly the following code:
+## Evaluate an Image with a Model
+Please run the following four command to evaluate the model. An example is given in training.sh. Additionally, the Graphcut.exe application can be found [here](https://drive.google.com/open?id=1QI2v1oWgha0jdcVuj7mzOXpgjBULZ7Mg).
 
-`python generate_perturbations.py`
+`python eval.py --imgPath [input_image.png] --modelPath [model_to_save.pkl] --saveImgPath [new_resized_image.png] --saveFlowPath [myflow.npy]
+Graphcut.exe [myflow.npy] [my_new_flow.npy]
+python resampling.py --img_path [new_resized_image.png] --flow_path [my_new_flow.npy]
+python.exe eval_illumination.py --imgPath [resamplling_result.png] --savPath [output.png] --modelPath model_illNet.pkl
+`
 
-Our sample dataset (2700 images, about 12 GB) is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing).
 
-To see the math worksheet solved, please run the following code:
-
-`python generate_answer_key.py --mathWorksheet pathToWorksheet.png`
-
-where the path to the worksheet is a full path.
-
-## Deep Learning U-Net Model Reference
-[DocProj Project Page](https://xiaoyu258.github.io/projects/docproj/)
 
 ## Contact
 Arnav Sharma - arnavsha@umich.edu
