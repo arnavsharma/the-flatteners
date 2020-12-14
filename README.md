@@ -26,7 +26,7 @@ To get a quick look of how the perturbations and realistic lighting look, run an
 
 `python generate_perturbations.py`
 
-Our sample dataset is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing).
+Our sample dataset (2700 images, about 12 GB) is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing).
 
 To see the math worksheet solved, please run the following code:
 
