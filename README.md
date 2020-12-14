@@ -1,12 +1,12 @@
 # Paper Flattening
 EECS 504 Fall 2020 at University of Michigan Final Project Assignment regarding paper flattening.
 
-[Paper]() | [Presentation]() | [Web-App Demo](https://shrouded-temple-50673.herokuapp.com/) | [Code](https://github.com/arnavsharma/the-flatteners)
+[Paper](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS_504_Project_Paper%20-%20The%20Flatteners.pdf) | [Presentation](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS%20504%20Presentation.pdf) | [Web-App Demo](https://shrouded-temple-50673.herokuapp.com/) | [Code](https://github.com/arnavsharma/the-flatteners)
 
 ## Dependencies
 
 * Python3
-* Windows
+* Windows (and Linux for Dataset Generation)
 * CUDA and CuDNN
 
 ## Demo
@@ -17,7 +17,12 @@ To run the demo on your location machine instead of as a web-app with the link a
 ## Generate Your Own Dataset
 Generating your own dataset is a great way to train an existing model. However, the format of the dataset must match what the model expects.
 
-To generate your own dataset, run and edit accordingly the following code:
+For the dataset, three different files in three separate folders are required. These are:
+*`./img/` (stores the perturbed paper .png files; [850, 850, 3] pixels)
+*`./img_msk/` (stores the binary black-white mask of where the paper is and where the background is; [850, 850, 3] pixels)
+*`./flow/` (stores the 2D flow maps of the perturbations applied to the source images; [2, 850, 850] pixels)
+
+To get a quick look of how the perturbations and realistic lighting look, run and edit accordingly the following code:
 
 `python generate_perturbations.py`
 
@@ -37,4 +42,4 @@ Arnav Sharma - arnavsha@umich.edu
 
 Austin Jeffries - ajeffr@umich.edu
 
-Ali Badreddine - abadredd@umich.edu 
+Ali Badreddine - abadredd@umich.edu
