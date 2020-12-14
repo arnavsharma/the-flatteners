@@ -31,7 +31,7 @@ Please run the following four command to evaluate the model. An example is given
 `python eval.py --imgPath [input_image.png] --modelPath [model_to_save.pkl] --saveImgPath [new_resized_image.png] --saveFlowPath [myflow.npy]
 Graphcut.exe [myflow.npy] [my_new_flow.npy]
 python resampling.py --img_path [new_resized_image.png] --flow_path [my_new_flow.npy]
-python.exe eval_illumination.py --imgPath [resamplling_result.png] --savPath [output.png] --modelPath model_illNet.pkl
+python.exe eval_illumination.py --imgPath [resamplling_result.png] --savPath [output.png] --modelPath [model_illNet.pkl]
 `
 
 
