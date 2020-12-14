@@ -21,18 +21,15 @@ To run the demo on your location machine instead of as a web-app with the link a
 Generating your own dataset is a great way to train an existing model. However, the format of the dataset must match what the model expects.
 
 For the dataset, three different files in three separate folders are required. These are:
-
 *`./img/` (stores the perturbed paper .png files; [850, 850, 3] pixels)
-
 *`./img_msk/` (stores the binary black-white mask of where the paper is and where the background is; [850, 850, 3] pixels)
-
 *`./flow/` (stores the 2D flow maps of the perturbations applied to the source images; [2, 850, 850] pixels)
 
 To get a quick look of how the perturbations and realistic lighting look, run and edit accordingly the following code:
 
 `python generate_perturbations.py`
 
-Our sample dataset (2700 images, about 12 GB) is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing). You can also use the several other available datasets on the Internet.
+Our sample dataset (2700 images, about 12 GB) is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing).
 
 To see the math worksheet solved, please run the following code:
 
