@@ -34,6 +34,8 @@ To get a quick look of how the perturbations and realistic lighting look, run an
 
 Our sample dataset (2700 images, about 12 GB) is located [here](https://drive.google.com/file/d/1CA6YbR_N1gXBOYSqL5V9Zih7dudRGMLk/view?usp=sharing).
 
+For our pre-trained model weights (0.51 loss) click [here](https://drive.google.com/file/d/1rZ_z5i-SIRdtDSndlQHzPZ_7J6raa5sl/view?usp=sharing)
+
 To see the math worksheet solved, please run the following code:
 
 `python generate_answer_key.py --mathWorksheet pathToWorksheet.png`
