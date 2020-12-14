@@ -1,7 +1,7 @@
 # Paper Flattening
 EECS 504 Fall 2020 at University of Michigan Final Project Assignment regarding paper flattening.
 
-[Paper](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS_504_Project_Paper%20-%20The%20Flatteners.pdf) | [Presentation](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS%20504%20Presentation.pdf) | [Web-App Demo](https://shrouded-temple-50673.herokuapp.com/) | [Code](https://github.com/arnavsharma/the-flatteners)
+[Paper](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS_504_Project_Paper%20-%20The%20Flatteners.pdf) | [Presentation](https://github.com/arnavsharma/the-flatteners/blob/main/Paper/EECS%20504%20Presentation.pdf) | [Web-App Demo](https://shrouded-temple-50673.herokuapp.com/) | [Code](https://github.com/arnavsharma/the-flatteners) |[Model Code](https://github.com/ajeffries0492/DocProj)
 
 ## Dependencies
 
