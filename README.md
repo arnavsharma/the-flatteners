@@ -22,11 +22,11 @@ Generating your own dataset is a great way to train an existing model. However, 
 
 For the dataset, three different files in three separate folders are required. These are:
 
-*`./img/` (stores the perturbed paper .png files; [850, 850, 3] pixels)
+* `./img/` (stores the perturbed paper .png files; [850, 850, 3] pixels)
 
-*`./img_msk/` (stores the binary black-white mask of where the paper is and where the background is; [850, 850, 3] pixels)
+* `./img_msk/` (stores the binary black-white mask of where the paper is and where the background is; [850, 850, 3] pixels)
 
-*`./flow/` (stores the 2D flow maps of the perturbations applied to the source images; [2, 850, 850] pixels)
+* `./flow/` (stores the 2D flow maps of the perturbations applied to the source images; [2, 850, 850] pixels)
 
 To get a quick look of how the perturbations and realistic lighting look, run and edit accordingly the following code:
 
