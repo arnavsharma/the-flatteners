@@ -1,16 +1,16 @@
 # Paper Flattening
 EECS 504 Fall 2020 at University of Michigan Final Project Assignment regarding paper flattening.
 
-[Paper]() | [Presentation]() | [Demo]() | [Code](https://github.com/arnavsharma/the-flatteners)
+[Paper]() | [Presentation]() | [Web-App Demo](https://shrouded-temple-50673.herokuapp.com/) | [Code](https://github.com/arnavsharma/the-flatteners)
 
 ## Dependencies
 
 * Python3
-* Windows or Linux
+* Windows
 * CUDA and CuDNN
 
 ## Demo
-To run the demo on your location machine instead of as a web app with the link above, please run the following code in the main directory:
+To run the demo on your location machine instead of as a web-app with the link above, please run the following code in the main directory:
 
 `python app.py`
 
@@ -25,7 +25,7 @@ Our sample dataset is located [here](https://drive.google.com/file/d/1CA6YbR_N1g
 
 To see the math worksheet solved, please run the following code:
 
-`python generate_answer_key.py -mathWorksheet pathToWorksheet.png`
+`python generate_answer_key.py --mathWorksheet pathToWorksheet.png`
 
 where the path to the worksheet is a full path.
 
