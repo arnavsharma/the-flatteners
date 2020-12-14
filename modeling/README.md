@@ -30,14 +30,13 @@ Please run the follwong command for training, and change the arguments as necess
 ## Evaluate an Image with a Model
 Please run the following four command to evaluate the model. An example is given in training.sh. Additionally, the Graphcut.exe application can be found [here](https://drive.google.com/open?id=1QI2v1oWgha0jdcVuj7mzOXpgjBULZ7Mg).
 
-`python eval.py --imgPath [input_image.png] --modelPath [model_to_save.pkl] --saveImgPath [new_resized_image.png] --saveFlowPath [myflow.npy]
+`python eval.py --imgPath [input_image.png] --modelPath [model_to_save.pkl] --saveImgPath [new_resized_image.png] --saveFlowPath [myflow.npy]`
 
-Graphcut.exe [myflow.npy] [my_new_flow.npy]
+`Graphcut.exe [myflow.npy] [my_new_flow.npy]`
 
-python resampling.py --img_path [new_resized_image.png] --flow_path [my_new_flow.npy]
+`python resampling.py --img_path [new_resized_image.png] --flow_path [my_new_flow.npy]`
 
-python.exe eval_illumination.py --imgPath [resamplling_result.png] --savPath [output.png] --modelPath [model_illNet.pkl]
-`
+`python.exe eval_illumination.py --imgPath [resamplling_result.png] --savPath [output.png] --modelPath [model_illNet.pkl]`
 
 
 
