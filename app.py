@@ -226,11 +226,11 @@ def layout():
                                                 id='perturbations',persistence_type='session',persistence=True,
                                             )  
 
-                                        ],label='Dataset',value='dataset',className='section-tab',
+                                        ],label='Dataset Generation',value='dataset',className='section-tab',
                                     ),
                                     dcc.Tab(
                                         [
-                                            html.H4('Math Worksheet Grading'),
+                                            html.H4('Math Worksheet Answer Key'),
                                             html.P(['The math worksheet answer key has been generated using template matching and K-means clustering. If you would like to try out a different worksheet please check out our ', html.A('GitHub.',href='https://github.com/arnavsharma/the-flatteners/tree/main/MathWorksheets'),
                                             ' If you see an error page, please refresh the page.']),
                                             html.H4('Turn on Detections'),
@@ -238,7 +238,7 @@ def layout():
                                                 on=False),
 
 
-                                        ],label='Grading',value='grade',className='section-tab',
+                                        ],label='Answers',value='grade',className='section-tab',
                                     ),
                                 ], id='section-tabs',value='dataset',persistence_type='session',persistence=True,
                             )
