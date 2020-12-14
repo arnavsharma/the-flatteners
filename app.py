@@ -105,7 +105,7 @@ def update_output(image_contents,section, perturbations, show_detections, names,
 
         gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)
 
-        ambient = 0.55
+        ambient = 0.6
         diffuse = 0.8
         specular =0.9
         #specular_exp = 25
@@ -157,7 +157,7 @@ def layout():
 
                     html.H1(
                         
-                        children='EECS 504 Project: The Flatteners',
+                        children='EECS 504 Project: The Document Flatteners',
                         id ='title',
                         style={
                             'textAlign': 'center'
@@ -215,7 +215,7 @@ def layout():
                                     dcc.Tab(
                                         [
                                             html.H4('Dataset Generation'),
-                                            html.P(['This application demonstrates the generation of realistic creases and folds given a flattened image of a document. It takes in an image of a document and outputs that same image with creases and folds. These types of images were used to learn the mapping of pixels between a flattened document and its creased equivalent. Please check out our ', 
+                                            html.P(['This application demonstrates the generation of realistic creases and folds given a flattened image of a document. It takes in an image of a document and outputs that same image with random creases and folds. Each page load will yield different results. These types of images were used to learn the mapping of pixels between a flattened document and its creased equivalent. Please check out our ', 
                                             html.A('Github',href ='https://github.com/arnavsharma/the-flatteners'),' for more information!']),
                                             html.H4('Choose Number of Creases'),
                                             dcc.Slider(
