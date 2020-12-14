@@ -18,9 +18,9 @@ Generating your own dataset is a great way to train an existing model. Please fo
 ## Generate Data-Set Patches 
 Please run the following pre-processing commands to create local and global patches of your data-set. These patches are necessary inputs for model training. Please change the arguments as necessary for your implementation.
 
-`python local_patch.py  
+`python local_patch.py`  
 
-python global_patch.py `
+`python global_patch.py `
 
 ## Training
 Please run the follwong command for training, and change the arguments as necessary for your implementation.
