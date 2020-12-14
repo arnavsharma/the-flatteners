@@ -37,4 +37,4 @@ Arnav Sharma - arnavsha@umich.edu
 
 Austin Jeffries - ajeffr@umich.edu
 
-Ali Badreddine - abadredd@umich.edu
+Ali Badreddine - abadredd@umich.edu 
